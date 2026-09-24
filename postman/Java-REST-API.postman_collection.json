@@ -1,0 +1,11 @@
+{
+  "info": {"name":"Java REST API - Employee Management","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "item": [
+    {"name":"Get All Employees","request":{"method":"GET","url":"http://localhost:8080/api/employees"}},
+    {"name":"Get Employee By ID","request":{"method":"GET","url":"http://localhost:8080/api/employees/1"}},
+    {"name":"Search By Name","request":{"method":"GET","url":"http://localhost:8080/api/employees/search?name=John"}},
+    {"name":"Create Employee","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\n  \"name\": \"Sampath Kumar\",\n  \"email\": \"sampath@example.com\",\n  \"department\": \"IT\",\n  \"designation\": \"Software Developer\"\n}"},"url":"http://localhost:8080/api/employees"}},
+    {"name":"Update Employee","request":{"method":"PUT","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\n  \"name\": \"Sampath Kumar\",\n  \"email\": \"sampath@example.com\",\n  \"department\": \"Development\",\n  \"designation\": \"Full-Stack Developer\"\n}"},"url":"http://localhost:8080/api/employees/1"}},
+    {"name":"Delete Employee","request":{"method":"DELETE","url":"http://localhost:8080/api/employees/1"}}
+  ]
+}
